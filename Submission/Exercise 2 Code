@@ -6,7 +6,7 @@ based on https://www.coderdojotc.org/micropython/sound/04-play-scale/
 """
 
 import machine
-import utime
+import utime 
 
 # GP16 is the speaker pin
 SPEAKER_PIN = 16
@@ -35,8 +35,8 @@ def play_song():
     for note, duration in MELODY:
         if note in NOTES:
             playtone(NOTES[note], duration)
-        bequiet()
-        sleep(0.05)  
+        quiet()
+        utime.sleep(0.05)  
 
 
 print("Playing frequency (Hz):")
