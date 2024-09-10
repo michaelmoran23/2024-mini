@@ -15,8 +15,7 @@ SPEAKER_PIN = 16
 speaker = machine.PWM(machine.Pin(SPEAKER_PIN))
 
 NOTES = {
-    'C4': 262, 'D4': 294, 'E4': 330, 'F4': 349, 'G4': 392, 'A4': 440, 'B4': 494,
-    'C5': 523
+    'C4': 262, 'G4': 392, 'A4': 440, 'B4': 494,
 }
 
 MELODY = [
